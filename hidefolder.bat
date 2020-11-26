@@ -1,7 +1,7 @@
 cls
 @ECHO OFF
 title Folder BiMat
-if EXIST "Kowgear Folder Locker" goto UNLOCK
+if EXIST "EpicSEO Folder Locker" goto UNLOCK
 if NOT EXIST BiMat goto MDLOCKER
 :CONFIRM
 echo Ban co muon khoa folder nay?(Y/N)
@@ -13,16 +13,16 @@ if %cho%==N goto END
 echo Invalid choice.
 goto CONFIRM
 :LOCK
-ren BiMat "Kowgear Folder Locker"
-attrib +h +s "Kowgear Folder Locker"
+ren BiMat "EpicSEO Folder Locker"
+attrib +h +s "EpicSEO Folder Locker"
 echo Folder locked
 goto End
 :UNLOCK
 echo Mat khau Folder la gi?
 set/p "pass=>"
-if NOT %pass%== KOWGear@ goto FAIL
-attrib -h -s "Kowgear Folder Locker"
-ren "Kowgear Folder Locker" BiMat
+if NOT %pass%== EpicSEO@ goto FAIL
+attrib -h -s "EpicSEO Folder Locker"
+ren "EpicSEO Folder Locker" BiMat
 echo Folder da duoc KHOA thanh cong
 goto End
 :FAIL
